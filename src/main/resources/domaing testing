@@ -1,0 +1,23 @@
+Scenario	        a	b	c	Expected Result	Reasoning
+
+Invalid triangle:
+1 side is zero      0   1	1	Invalid	One side is zero
+
+
+Invalid triangle:
+sum of two sides
+    equals third	1	2	3	Invalid	The sum of two sides equals the third, violating triangle inequality.
+
+
+Invalid triangle:
+sum of two sides
+less than third	    10	2	5	Invalid	The sum of two sides is less than the third, violating triangle inequality.
+
+
+Equilateral     	5	5	5	Equilateral	All three sides are equal
+
+
+Isosceles       	5	5	3	Isosceles	Two sides are equal
+
+
+Scalene         	3	4	5	Scalene	All three sides are different
