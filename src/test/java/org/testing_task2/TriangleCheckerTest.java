@@ -45,7 +45,7 @@ public class TriangleCheckerTest {
 
     @ParameterizedTest
     @CsvSource({
-            "0, 1, 1, Invalid",    
+            "0, 1, 1, Invalid",
             "1, 2, 3, Invalid",
             "10, 2, 5, Invalid",
             "5, 5, 5, Equilateral",
