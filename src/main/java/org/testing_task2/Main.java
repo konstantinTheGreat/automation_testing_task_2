@@ -7,6 +7,7 @@ public class Main {
         int A;
         int B;
         int C;
+
         try {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Enter the sides of the triangle: ");
@@ -22,7 +23,7 @@ public class Main {
             System.out.println("Invalid");
             return;
         }
-        // check what we type in
+
         System.out.println(TriangleChecker.getTriangleType(A, B, C));
     }
 

@@ -4,10 +4,10 @@ public class TriangleChecker {
     public static String getTriangleType(int A, int B, int C) throws IllegalArgumentException {
         try {
             if (C - A >= B || B - A >= C || A - B >= C) {
-                return "Invalid";
+                return "No such triangle: sum of two sides is less than the third side";
             }
             if (A <= 0 || B <= 0 || C <= 0) {
-                return "Invalid";
+                return "No such triangle: sum of two sides is less than the third side";
             }
             if (A == B && B == C) {
                 return "Equilateral";
