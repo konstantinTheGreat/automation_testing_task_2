@@ -10,17 +10,17 @@ public class TriangleCheckerTest {
 
     @Test
     void testInvalidTriangleZeroSide() {
-        assertEquals("Invalid", TriangleChecker.getTriangleType(0, 1, 1));
+        assertEquals("No such triangle: sum of two sides is less than the third side", TriangleChecker.getTriangleType(0, 1, 1));
     }
 
     @Test
     void testInvalidTriangleSumEqualsThird() {
-        assertEquals("Invalid", TriangleChecker.getTriangleType(1, 2, 3));
+        assertEquals("No such triangle: sum of two sides is less than the third side", TriangleChecker.getTriangleType(1, 2, 3));
     }
 
     @Test
     void testInvalidTriangleSumLessThanThird() {
-        assertEquals("Invalid", TriangleChecker.getTriangleType(10, 2, 5));
+        assertEquals("No such triangle: sum of two sides is less than the third side", TriangleChecker.getTriangleType(10, 2, 5));
     }
 
     @Test
