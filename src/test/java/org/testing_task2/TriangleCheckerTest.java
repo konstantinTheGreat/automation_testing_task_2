@@ -10,17 +10,17 @@ public class TriangleCheckerTest {
 
     @Test
     void testInvalidTriangleZeroSide() {
-        assertEquals("No such triangle: sum of two sides is less than the third side", TriangleChecker.getTriangleType(0, 1, 1));
+        assertEquals("Not a valid triangle. No such triangle exists!", TriangleChecker.getTriangleType(0, 1, 1));
     }
 
     @Test
     void testInvalidTriangleSumEqualsThird() {
-        assertEquals("No such triangle: sum of two sides is less than the third side", TriangleChecker.getTriangleType(1, 2, 3));
+        assertEquals("Not a valid triangle. No such triangle exists!", TriangleChecker.getTriangleType(1, 2, 3));
     }
 
     @Test
     void testInvalidTriangleSumLessThanThird() {
-        assertEquals("No such triangle: sum of two sides is less than the third side", TriangleChecker.getTriangleType(10, 2, 5));
+        assertEquals("Not a valid triangle. No such triangle exists!", TriangleChecker.getTriangleType(10, 2, 5));
     }
 
     @Test
@@ -45,9 +45,9 @@ public class TriangleCheckerTest {
 
     @ParameterizedTest
     @CsvSource({
-            "0, 1, 1, Invalid",
-            "1, 2, 3, Invalid",
-            "10, 2, 5, Invalid",
+            "0, 1, 1, Not a valid triangle. No such triangle exists!",
+            "1, 2, 3, Not a valid triangle. No such triangle exists!",
+            "10, 2, 5, Not a valid triangle. No such triangle exists!",
             "5, 5, 5, Equilateral",
             "5, 5, 3, Isosceles",
             "3, 5, 5, Isosceles",
